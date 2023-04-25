@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.orderease.HelloController">
+   <left>
+      <AnchorPane prefHeight="800.0" prefWidth="500.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="loginImage" disable="true" fitHeight="832.0" fitWidth="549.0" layoutX="-50.0" layoutY="-22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/orderease/Images/pexels-mikhail-nilov-7681847.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="800.0" prefWidth="700.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="164.0" layoutY="156.0" prefHeight="52.0" prefWidth="291.0" text="Ingresa a tu cuenta">
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <font>
+                  <Font name="Microsoft PhagsPa Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="187.0" layoutY="326.0" prefHeight="18.0" prefWidth="80.0" text="Usuario">
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <font>
+                  <Font name="Microsoft PhagsPa" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="187.0" layoutY="439.0" prefHeight="30.0" prefWidth="126.0" text="Contraseña">
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <font>
+                  <Font name="Microsoft PhagsPa" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" layoutX="190.0" layoutY="349.0" prefHeight="65.0" prefWidth="350.0" promptText="Ingresa tu usuario" style="-fx-background-color: #ffffff; -fx-background-radius: 3px; -fx-text-fill: #000000;">
+               <font>
+                  <Font name="Microsoft PhagsPa" size="18.0" />
+               </font></TextField>
+            <PasswordField fx:id="passwordPasswordField" layoutX="189.0" layoutY="461.0" prefHeight="65.0" prefWidth="350.0" promptText="Ingresa tu contraseña" style="-fx-background-color: #ffffff; -fx-background-radius: 3px; -fx-text-fill: #000000;">
+               <font>
+                  <Font name="Microsoft PhagsPa" size="18.0" />
+               </font></PasswordField>
+            <Button fx:id="loginButton" layoutX="188.0" layoutY="568.0" minHeight="19.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="54.0" prefWidth="358.0" style="-fx-background-color: #000000; -fx-background-radius: 3px; -fx-text-fill: #ffffff;" text="Iniciar Sesión" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft PhagsPa" size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            <Line endX="306.20001220703125" endY="0.399993896484375" layoutX="234.0" layoutY="414.0" startX="-44.0" startY="0.399993896484375" stroke="#6e6e6e" />
+            <Label layoutX="164.0" layoutY="235.0" prefHeight="77.0" prefWidth="370.0" text="Por favor ingresa los datos solicitados para el inicio de sesión" textFill="#565656" wrapText="true">
+               <font>
+                  <Font name="Microsoft PhagsPa" size="17.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <Line endX="306.20001220703125" endY="0.399993896484375" layoutX="233.0" layoutY="526.0" startX="-44.0" startY="0.399993896484375" stroke="#6e6e6e" />
+            <ImageView fx:id="OrderEaseIcon" fitHeight="165.0" fitWidth="159.0" layoutX="524.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/orderease/Images/LogoOrderEase.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="190.0" layoutY="673.0" prefHeight="72.0" prefWidth="356.0" textFill="#09695f" wrapText="true">
+               <font>
+                  <Font name="Microsoft PhagsPa" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
